@@ -28,3 +28,20 @@
   background-clip: text;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 28s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin 20s linear infinite reverse;
+}
+

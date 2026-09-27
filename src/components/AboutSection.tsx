@@ -25,7 +25,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
         className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px] pointer-events-none select-none z-0"
       >
         <img
-          src="/3d-moon.svg"
+          src="./3d-moon.svg"
           alt="3D Moon Icon"
           loading="lazy"
           className="w-full h-auto object-contain"
@@ -41,7 +41,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
         className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[140px] md:w-[180px] pointer-events-none select-none z-0"
       >
         <img
-          src="/3d-sculpture.svg"
+          src="./3d-sculpture.svg"
           alt="3D Geometric Sculpture"
           loading="lazy"
           className="w-full h-auto object-contain"
@@ -57,7 +57,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
         className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px] pointer-events-none select-none z-0"
       >
         <img
-          src="/3d-lego.svg"
+          src="./3d-lego.svg"
           alt="3D Block Sculpture"
           loading="lazy"
           className="w-full h-auto object-contain"
@@ -73,7 +73,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
         className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[170px] md:w-[220px] pointer-events-none select-none z-0"
       >
         <img
-          src="/3d-cluster.svg"
+          src="./3d-cluster.svg"
           alt="3D Abstract Cluster"
           loading="lazy"
           className="w-full h-auto object-contain"

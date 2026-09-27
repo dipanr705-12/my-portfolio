@@ -8,7 +8,7 @@ interface HeroSectionProps {
   onOpenContact?: () => void;
 }
 
-const PORTRAIT_URL = '/pikachu-face.svg';
+const PORTRAIT_URL = './pikachu-face.svg';
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenContact }) => {
   const [isThunderboltOpen, setIsThunderboltOpen] = useState(false);
@@ -191,7 +191,7 @@ startxref
                 </defs>
 
                 {/* Outer Slow-Rotating Dashed Circuit Orbit */}
-                <g className="origin-center animate-[spin_28s_linear_infinite]" style={{ willChange: 'transform' }}>
+                <g className="origin-center animate-spin-slow" style={{ transformOrigin: '300px 300px', willChange: 'transform' }}>
                   <circle
                     cx="300"
                     cy="300"
@@ -209,7 +209,7 @@ startxref
                 </g>
 
                 {/* Inner Counter-Rotating Tech Ring */}
-                <g className="origin-center animate-[spin_20s_linear_infinite_reverse]" style={{ willChange: 'transform' }}>
+                <g className="origin-center animate-spin-reverse" style={{ transformOrigin: '300px 300px', willChange: 'transform' }}>
                   <circle
                     cx="300"
                     cy="300"
