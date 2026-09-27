@@ -22,6 +22,20 @@ export interface ProjectData {
 export const PROJECTS: ProjectData[] = [
   {
     number: '01',
+    name: 'My Portfolio',
+    category: 'Web Application · React / TS / Tailwind',
+    col2Img: '/my-portfolio/screen1-hero.svg',
+    col1Img1: '/my-portfolio/screen2-projects.svg',
+    col1Img2: '/my-portfolio/screen3-thunderbolt.svg',
+    summary:
+      'Dipan Roy’s personal interactive portfolio landing page built with React 19, TypeScript, Tailwind CSS v4, Motion animations, Pikachu Thunderbolt battle mode, contact form, and dynamic GitHub API project sync.',
+    deliverables: 'React 19 · TypeScript · Tailwind CSS · Motion · Vite',
+    year: '2026',
+    githubUrl: 'https://github.com/dipanr705-12/my-portfolio',
+    liveUrl: 'https://github.com/dipanr705-12/my-portfolio',
+  },
+  {
+    number: '02',
     name: 'Winter Guidance',
     category: 'Web Application · HTML / CSS / JS',
     col2Img: '/winter-guidance/screen1-home.svg',
@@ -39,7 +53,7 @@ export const PROJECTS: ProjectData[] = [
     liveUrl: 'https://sparkling-macaron-78a7c6.netlify.app',
   },
   {
-    number: '02',
+    number: '03',
     name: 'WhatsApp Bot',
     category: 'Automation · Node.js & Docker',
     col2Img: '/whatsapp-bot/screen1-setup.svg',
@@ -52,7 +66,7 @@ export const PROJECTS: ProjectData[] = [
     liveUrl: 'https://whatsapp-bot-7u6g.onrender.com',
   },
   {
-    number: '03',
+    number: '04',
     name: 'ECE & Coding Hub',
     category: 'GitHub Profile · dipanr705-12',
     col1Img1: '/ece-hub-1.svg',

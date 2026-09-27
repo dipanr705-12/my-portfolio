@@ -59,6 +59,8 @@ function generateFastBolt(
 export const PikachuThunderboltModal: React.FC<PikachuThunderboltModalProps> = ({
   isOpen,
   onClose,
+  onOpenContact,
+  onDownloadCV,
 }) => {
   const [phase, setPhase] = useState<BattlePhase>('charging');
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -400,8 +402,8 @@ export const PikachuThunderboltModal: React.FC<PikachuThunderboltModalProps> = (
             className="pointer-events-none fixed inset-0 z-10 w-full h-full"
           />
 
-          {/* Top Bar: ONLY Back Button */}
-          <div className="relative z-30 flex items-center justify-start px-5 sm:px-8 pt-5 sm:pt-7">
+          {/* Top Bar: Back Button & Quick Hub Actions */}
+          <div className="relative z-30 flex flex-wrap items-center justify-between gap-3 px-5 sm:px-8 pt-5 sm:pt-7">
             <button
               type="button"
               onClick={onClose}
@@ -410,6 +412,27 @@ export const PikachuThunderboltModal: React.FC<PikachuThunderboltModalProps> = (
               <ArrowLeft className="w-4 h-4" />
               <span>Back</span>
             </button>
+
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              {onDownloadCV && (
+                <button
+                  type="button"
+                  onClick={onDownloadCV}
+                  className="rounded-full border border-[#FFEA00]/60 bg-[#0C0C0C]/80 text-[#FFEA00] font-semibold uppercase tracking-wider px-4 py-2 text-xs sm:text-sm hover:bg-[#FFEA00]/20 transition-colors cursor-pointer"
+                >
+                  Download CV
+                </button>
+              )}
+              {onOpenContact && (
+                <button
+                  type="button"
+                  onClick={onOpenContact}
+                  className="rounded-full border border-[#38BDF8]/60 bg-[#0C0C0C]/80 text-[#38BDF8] font-semibold uppercase tracking-wider px-4 py-2 text-xs sm:text-sm hover:bg-[#38BDF8]/20 transition-colors cursor-pointer"
+                >
+                  Contact Me
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Center: Classic Anime Pikachu Battle Pose (GPU-accelerated transform only) */}
