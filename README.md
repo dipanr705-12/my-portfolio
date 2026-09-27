@@ -1,5 +1,5 @@
 ## 🌐 Live Portfolio Website
-🚀 **Live Link:** [[https://ais-pre-wlpjngfukzm2pmgce34nn7-595130161318.asia-southeast1.run.app](https://ais-pre-wlpjngfukzm2pmgce34nn7-595130161318.asia-southeast1.run.app)](https://dipanr705-12.github.io/my-portfolio/)
+🚀 **Live Link:** (https://dipanr705-12.github.io/my-portfolio/)
 
 [![View Live Portfolio](https://img.shields.io/badge/LIVE_WEBSITE-Visit_Portfolio-FFEA00?style=for-the-badge&logo=googlechrome&logoColor=0C0C0C)](https://ais-pre-wlpjngfukzm2pmgce34nn7-595130161318.asia-southeast1.run.app)
 # ⚡ Dipan Roy — Electronics & Code Portfolio
