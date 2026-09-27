@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d356b" />
+      <stop offset="50%" stop-color="#274787" />
+      <stop offset="100%" stop-color="#1b3263" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg2)" />
+
+  <!-- Snowflakes -->
+  <g fill="#ffffff" fill-opacity="0.7" font-family="sans-serif" font-size="20">
+    <text x="190" y="160">❄</text>
+    <text x="64" y="230">❄</text>
+    <text x="530" y="370">❄</text>
+    <text x="215" y="635">❄</text>
+    <text x="295" y="795">❄</text>
+    <text x="1035" y="75">❄</text>
+    <text x="1255" y="435">❄</text>
+    <text x="1205" y="730">❄</text>
+    <text x="1310" y="690">❄</text>
+  </g>
+
+  <!-- Back Button -->
+  <rect x="6" y="284" width="84" height="36" rx="18" fill="#00c3ff" />
+  <text x="48" y="307" text-anchor="middle" fill="#06152d" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="15">← Back</text>
+
+  <!-- Header -->
+  <text x="800" y="118" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="44">❄ Darjeeling in Pre-Winter ❄</text>
+  <text x="800" y="155" text-anchor="middle" fill="#dce6f7" font-family="Segoe UI, Arial, sans-serif" font-size="18">The Queen of Hills before deep winter begins</text>
+
+  <!-- Card 1: About Darjeeling -->
+  <rect x="340" y="210" width="925" height="132" rx="18" fill="#466093" fill-opacity="0.75" />
+  <text x="364" y="256" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🏞 About Darjeeling</text>
+  <text x="364" y="290" fill="#eef4ff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Darjeeling is a beautiful hill station in West Bengal, India. It is famous for its tea gardens, toy train, and stunning views of the</text>
+  <text x="364" y="315" fill="#eef4ff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Kanchenjunga mountain.</text>
+
+  <!-- Card 2: Pre-Winter Weather -->
+  <rect x="340" y="362" width="925" height="132" rx="18" fill="#466093" fill-opacity="0.75" />
+  <text x="364" y="408" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🍁 Pre-Winter Weather</text>
+  <text x="364" y="442" fill="#eef4ff" font-family="Segoe UI, Arial, sans-serif" font-size="16">During pre-winter (October–November), Darjeeling has cool and pleasant weather. Days are fresh and sunny, while nights</text>
+  <text x="364" y="467" fill="#eef4ff" font-family="Segoe UI, Arial, sans-serif" font-size="16">are chilly. Light mist and fog add magical beauty to the hills.</text>
+
+  <!-- Card 3: Places to Visit -->
+  <rect x="340" y="514" width="925" height="192" rx="18" fill="#466093" fill-opacity="0.75" />
+  <text x="364" y="560" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">📍 Places to Visit</text>
+
+  <g transform="translate(364, 580)">
+    <rect x="0" y="0" width="206" height="104" rx="14" fill="#637aa8" />
+    <text x="103" y="48" text-anchor="middle" font-size="32">🚂</text>
+    <text x="103" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Darjeeling Toy Train</text>
+
+    <rect x="224" y="0" width="206" height="104" rx="14" fill="#637aa8" />
+    <text x="327" y="48" text-anchor="middle" font-size="32">🏔</text>
+    <text x="327" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Tiger Hill Sunrise</text>
+
+    <rect x="448" y="0" width="206" height="104" rx="14" fill="#637aa8" />
+    <text x="551" y="48" text-anchor="middle" font-size="32">🍃</text>
+    <text x="551" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Tea Gardens</text>
+
+    <rect x="672" y="0" width="206" height="104" rx="14" fill="#637aa8" />
+    <text x="775" y="48" text-anchor="middle" font-size="32">🏯</text>
+    <text x="775" y="82" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Ghoom Monastery</text>
+  </g>
+
+  <!-- Card 4: Why Visit in Pre-Winter? -->
+  <rect x="340" y="726" width="925" height="180" rx="18" fill="#466093" fill-opacity="0.75" />
+  <text x="364" y="772" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🎒 Why Visit in Pre-Winter?</text>
+  <g fill="#eef4ff" font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    <text x="364" y="806">✓ Clear mountain views</text>
+    <text x="364" y="831">✓ Less crowd than peak winter</text>
+    <text x="364" y="856">✓ Comfortable sightseeing weather</text>
+    <text x="364" y="881">✓ Best time for photography and nature walks</text>
+  </g>
+
+  <text x="800" y="982" text-anchor="middle" fill="#dce6f7" font-family="Segoe UI, Arial, sans-serif" font-size="16">© 2026 | Team Laksha Cracker</text>
+</svg>

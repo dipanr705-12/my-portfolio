@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9a9e" />
+      <stop offset="50%" stop-color="#fad0c4" />
+      <stop offset="100%" stop-color="#96c4ff" />
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg4)" />
+
+  <!-- Back Button -->
+  <rect x="12" y="88" width="90" height="42" rx="21" fill="#00bfff" />
+  <text x="57" y="115" text-anchor="middle" fill="#081c30" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="16">← Back</text>
+
+  <!-- Title -->
+  <text x="800" y="105" text-anchor="middle" fill="#ffffff" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="52" filter="url(#shadow4)">❄ Winter Leisure Fun ❄</text>
+  <text x="800" y="170" text-anchor="middle" fill="#ffffff" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="22">Relax • Play • Enjoy the Winter Season</text>
+
+  <!-- Row 1 Cards -->
+  <!-- Card 1: Hot Drinks -->
+  <g transform="translate(236, 254)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">☕</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Hot Drinks</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Enjoy tea, coffee, and hot</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">chocolate to stay warm and</text>
+    <text x="130" y="260" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">relaxed.</text>
+  </g>
+
+  <!-- Card 2: Reading Books -->
+  <g transform="translate(524, 254)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">📚</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Reading Books</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Winter is perfect for reading</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">stories, comics, and novels</text>
+    <text x="130" y="260" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">indoors.</text>
+  </g>
+
+  <!-- Card 3: Indoor Games -->
+  <g transform="translate(812, 254)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">🎮</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Indoor Games</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Play video games, board</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">games, and puzzles with</text>
+    <text x="130" y="260" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">family and friends.</text>
+  </g>
+
+  <!-- Card 4: Creative Time -->
+  <g transform="translate(1100, 254)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">🎨</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Creative Time</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Drawing, painting, and crafts</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">make winter fun and colorful.</text>
+  </g>
+
+  <!-- Row 2 Cards -->
+  <!-- Card 5: Movies & Music -->
+  <g transform="translate(236, 586)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">🎬</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Movies &amp; Music</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Watch movies and listen to</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">music while enjoying cozy</text>
+    <text x="130" y="260" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">winter vibes.</text>
+  </g>
+
+  <!-- Card 6: Fun Outdoors -->
+  <g transform="translate(524, 586)" filter="url(#shadow4)">
+    <rect width="260" height="296" rx="26" fill="#ffffff" />
+    <text x="130" y="95" text-anchor="middle" font-size="56">❄</text>
+    <text x="130" y="172" text-anchor="middle" fill="#ee7762" font-family="Comic Sans MS, Segoe UI, sans-serif" font-weight="700" font-size="26">Fun Outdoors</text>
+    <text x="130" y="212" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">Enjoy sunshine, short walks,</text>
+    <text x="130" y="236" text-anchor="middle" fill="#222222" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">and light winter games.</text>
+  </g>
+
+  <text x="800" y="962" text-anchor="middle" fill="#ffffff" font-family="Comic Sans MS, Segoe UI, sans-serif" font-size="16">© 2026 | Team laksha cracker</text>
+</svg>

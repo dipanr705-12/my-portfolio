@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <radialGradient id="faceGrad" cx="50%" cy="42%" r="52%">
+      <stop offset="0%" stop-color="#FFF85B" />
+      <stop offset="65%" stop-color="#FFEA00" />
+      <stop offset="92%" stop-color="#F2C800" />
+      <stop offset="100%" stop-color="#DDA900" />
+    </radialGradient>
+
+    <linearGradient id="earGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEE2E" />
+      <stop offset="75%" stop-color="#F5CA00" />
+      <stop offset="100%" stop-color="#D4A400" />
+    </linearGradient>
+
+    <linearGradient id="earGradR" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFEE2E" />
+      <stop offset="75%" stop-color="#F5CA00" />
+      <stop offset="100%" stop-color="#D4A400" />
+    </linearGradient>
+
+    <radialGradient id="cheekGradL" cx="42%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FF2E3D" />
+      <stop offset="75%" stop-color="#EE091B" />
+      <stop offset="100%" stop-color="#B8000E" />
+    </radialGradient>
+
+    <radialGradient id="cheekGradR" cx="58%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FF2E3D" />
+      <stop offset="75%" stop-color="#EE091B" />
+      <stop offset="100%" stop-color="#B8000E" />
+    </radialGradient>
+
+    <linearGradient id="tongueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C96B7C" />
+      <stop offset="32%" stop-color="#E6738B" />
+      <stop offset="100%" stop-color="#FF7FA0" />
+    </linearGradient>
+
+    <clipPath id="leftEarClip">
+      <path d="M 355 258 C 280 155, 175 118, 92 118 C 92 215, 132 315, 212 372 Z" />
+    </clipPath>
+
+    <clipPath id="rightEarClip">
+      <path d="M 645 258 C 720 155, 825 118, 908 118 C 908 215, 868 315, 788 372 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- LEFT EAR -->
+  <g>
+    <path
+      d="M 355 258 C 280 155, 175 118, 92 118 C 92 215, 132 315, 212 372 Z"
+      fill="url(#earGradL)"
+      stroke="#121212"
+      stroke-width="26"
+      stroke-linejoin="round"
+    />
+    <!-- Left Ear Black Tip -->
+    <g clip-path="url(#leftEarClip)">
+      <path
+        d="M 65 95 L 235 145 C 205 205, 185 245, 172 308 L 65 250 Z"
+        fill="#151515"
+      />
+    </g>
+    <!-- Re-stroke ear outer border for crispness -->
+    <path
+      d="M 355 258 C 280 155, 175 118, 92 118 C 92 215, 132 315, 212 372"
+      fill="none"
+      stroke="#121212"
+      stroke-width="26"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- RIGHT EAR -->
+  <g>
+    <path
+      d="M 645 258 C 720 155, 825 118, 908 118 C 908 215, 868 315, 788 372 Z"
+      fill="url(#earGradR)"
+      stroke="#121212"
+      stroke-width="26"
+      stroke-linejoin="round"
+    />
+    <!-- Right Ear Black Tip -->
+    <g clip-path="url(#rightEarClip)">
+      <path
+        d="M 935 95 L 765 145 C 795 205, 815 245, 828 308 L 935 250 Z"
+        fill="#151515"
+      />
+    </g>
+    <!-- Re-stroke ear outer border for crispness -->
+    <path
+      d="M 645 258 C 720 155, 825 118, 908 118 C 908 215, 868 315, 788 372"
+      fill="none"
+      stroke="#121212"
+      stroke-width="26"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- MAIN HEAD / FACE SHAPE -->
+  <path
+    d="M 345 252
+       C 415 224, 585 224, 655 252
+       C 725 280, 782 350, 800 462
+       C 812 536, 842 595, 836 668
+       C 828 776, 705 868, 500 868
+       C 295 868, 172 776, 164 668
+       C 158 595, 188 536, 200 462
+       C 218 350, 275 280, 345 252 Z"
+    fill="url(#faceGrad)"
+    stroke="#121212"
+    stroke-width="26"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner Ear Base Crease Lines -->
+  <path
+    d="M 304 288 C 324 270, 342 258, 360 252"
+    fill="none"
+    stroke="#121212"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 696 288 C 676 270, 658 258, 640 252"
+    fill="none"
+    stroke="#121212"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 218 370 C 232 346, 244 334, 252 326"
+    fill="none"
+    stroke="#121212"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+  <path
+    d="M 782 370 C 768 346, 756 334, 748 326"
+    fill="none"
+    stroke="#121212"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- RED CHEEKS -->
+  <circle
+    cx="250"
+    cy="688"
+    r="74"
+    fill="url(#cheekGradL)"
+    stroke="#121212"
+    stroke-width="16"
+  />
+  <circle
+    cx="750"
+    cy="688"
+    r="74"
+    fill="url(#cheekGradR)"
+    stroke="#121212"
+    stroke-width="16"
+  />
+
+  <!-- EYES -->
+  <!-- Left Eye -->
+  <g>
+    <circle cx="320" cy="516" r="65" fill="#121212" />
+    <circle cx="332" cy="492" r="23" fill="#FFFFFF" />
+  </g>
+
+  <!-- Right Eye -->
+  <g>
+    <circle cx="680" cy="516" r="65" fill="#121212" />
+    <circle cx="668" cy="492" r="23" fill="#FFFFFF" />
+  </g>
+
+  <!-- NOSE -->
+  <path
+    d="M 476 575 Q 500 568 524 575 Q 518 602 500 602 Q 482 602 476 575 Z"
+    fill="#121212"
+  />
+
+  <!-- MOUTH & TONGUE -->
+  <!-- Open Tongue Shape -->
+  <path
+    d="M 436 664
+       Q 468 672 500 644
+       Q 532 672 564 664
+       C 556 742, 532 792, 500 792
+       C 468 792, 444 742, 436 664 Z"
+    fill="url(#tongueGrad)"
+    stroke="#121212"
+    stroke-width="16"
+    stroke-linejoin="round"
+  />
+
+  <!-- Upper W Lip Line -->
+  <path
+    d="M 396 640
+       C 418 674, 474 674, 500 642
+       C 526 674, 582 674, 604 640"
+    fill="none"
+    stroke="#121212"
+    stroke-width="15"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
