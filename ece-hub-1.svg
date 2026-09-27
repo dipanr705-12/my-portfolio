@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="30" fill="#0D1117"/>
+  <rect x="20" y="20" width="760" height="460" rx="20" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+  <!-- Terminal Header -->
+  <circle cx="50" cy="50" r="7" fill="#FF5F56"/>
+  <circle cx="72" cy="50" r="7" fill="#FFBD2E"/>
+  <circle cx="94" cy="50" r="7" fill="#27C93F"/>
+  <text x="400" y="55" fill="#8B949E" font-family="monospace" font-size="14" text-anchor="middle" font-weight="bold">dipanr705-12 / ECE &amp; Coding Hub — main.cpp</text>
+  <line x1="20" y1="75" x2="780" y2="75" stroke="#30363D" stroke-width="2"/>
+  <!-- Code lines -->
+  <text x="50" y="120" fill="#FF7B72" font-family="monospace" font-size="16">#include &lt;iostream&gt;</text>
+  <text x="50" y="150" fill="#FF7B72" font-family="monospace" font-size="16">#include &lt;Arduino.h&gt;</text>
+  <text x="50" y="190" fill="#79C0FF" font-family="monospace" font-size="16">void setup() {</text>
+  <text x="80" y="220" fill="#D2A8FF" font-family="monospace" font-size="16">  Serial.begin(9600);</text>
+  <text x="80" y="250" fill="#D2A8FF" font-family="monospace" font-size="16">  pinMode(13, OUTPUT); // ECE Hardware LED Setup</text>
+  <text x="50" y="280" fill="#79C0FF" font-family="monospace" font-size="16">}</text>
+  <text x="50" y="330" fill="#79C0FF" font-family="monospace" font-size="16">void loop() {</text>
+  <text x="80" y="360" fill="#D2A8FF" font-family="monospace" font-size="16">  digitalWrite(13, HIGH); delay(1000);</text>
+  <text x="80" y="390" fill="#D2A8FF" font-family="monospace" font-size="16">  digitalWrite(13, LOW);  delay(1000);</text>
+  <text x="50" y="420" fill="#79C0FF" font-family="monospace" font-size="16">}</text>
+  <rect x="290" y="405" width="10" height="20" fill="#58A6FF"/>
+</svg>

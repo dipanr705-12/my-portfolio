@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626" />
+      <stop offset="50%" stop-color="#333333" />
+      <stop offset="100%" stop-color="#2c2c2c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg5)" />
+
+  <!-- Blue Snowflakes -->
+  <g fill="#58a6ff" fill-opacity="0.7" font-family="sans-serif" font-size="22">
+    <text x="285" y="24">❄</text>
+    <text x="95" y="190">❄</text>
+    <text x="140" y="315">❄</text>
+    <text x="155" y="655">❄</text>
+    <text x="210" y="750">❄</text>
+    <text x="340" y="700">❄</text>
+    <text x="1335" y="650">❄</text>
+    <text x="1380" y="170">❄</text>
+    <text x="1350" y="450">❄</text>
+  </g>
+
+  <!-- Back Button -->
+  <rect x="8" y="250" width="84" height="36" rx="18" fill="#ffffff" />
+  <text x="50" y="273" text-anchor="middle" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="15">← Back</text>
+
+  <!-- Header -->
+  <text x="800" y="92" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="44">🏔 Leh–Ladakh in Winter 🏔</text>
+  <text x="800" y="128" text-anchor="middle" fill="#d4d4d8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Frozen Lakes • Snow Deserts • Extreme Beauty</text>
+
+  <!-- Card 1: About Leh-Ladakh -->
+  <rect x="338" y="182" width="912" height="130" rx="18" fill="#525255" fill-opacity="0.88" />
+  <text x="362" y="228" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🏔 About Leh–Ladakh</text>
+  <text x="362" y="262" fill="#f4f4f5" font-family="Segoe UI, Arial, sans-serif" font-size="16">Leh–Ladakh is a high-altitude region in northern India, famous for its rugged mountains, monasteries, and unique</text>
+  <text x="362" y="287" fill="#f4f4f5" font-family="Segoe UI, Arial, sans-serif" font-size="16">landscapes. In winter, it turns into a frozen desert with breathtaking beauty.</text>
+
+  <!-- Card 2: Winter Weather -->
+  <rect x="338" y="332" width="912" height="130" rx="18" fill="#525255" fill-opacity="0.88" />
+  <text x="362" y="378" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">❄ Winter Weather</text>
+  <text x="362" y="412" fill="#f4f4f5" font-family="Segoe UI, Arial, sans-serif" font-size="16">Winter (December to February) in Ladakh is extremely cold, with temperatures often dropping below -20°C. Snowfall covers</text>
+  <text x="362" y="437" fill="#f4f4f5" font-family="Segoe UI, Arial, sans-serif" font-size="16">the region, creating stunning white landscapes.</text>
+
+  <!-- Card 3: Winter Attractions -->
+  <rect x="338" y="482" width="912" height="190" rx="18" fill="#525255" fill-opacity="0.88" />
+  <text x="362" y="528" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">📍 Winter Attractions</text>
+
+  <g transform="translate(362, 550)">
+    <rect x="0" y="0" width="204" height="102" rx="14" fill="#6b6b6e" />
+    <text x="102" y="46" text-anchor="middle" font-size="32">❄</text>
+    <text x="102" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Frozen Lakes</text>
+
+    <rect x="220" y="0" width="204" height="102" rx="14" fill="#6b6b6e" />
+    <text x="322" y="46" text-anchor="middle" font-size="32">🥾</text>
+    <text x="322" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Chadar Trek</text>
+
+    <rect x="440" y="0" width="204" height="102" rx="14" fill="#6b6b6e" />
+    <text x="542" y="46" text-anchor="middle" font-size="32">🏯</text>
+    <text x="542" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Monasteries</text>
+
+    <rect x="660" y="0" width="204" height="102" rx="14" fill="#6b6b6e" />
+    <text x="762" y="46" text-anchor="middle" font-size="32">📷</text>
+    <text x="762" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Snow Views</text>
+  </g>
+
+  <!-- Card 4: Why Visit in Winter? -->
+  <rect x="338" y="692" width="912" height="180" rx="18" fill="#525255" fill-opacity="0.88" />
+  <text x="362" y="738" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🎒 Why Visit in Winter?</text>
+  <g fill="#f4f4f5" font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    <text x="362" y="772">✓ Experience extreme winter adventure</text>
+    <text x="362" y="797">✓ Famous Chadar Trek on frozen river</text>
+    <text x="362" y="822">✓ Peaceful monasteries in snow</text>
+    <text x="362" y="847">✓ Unique winter landscapes</text>
+  </g>
+
+  <text x="800" y="974" text-anchor="middle" fill="#d4d4d8" font-family="Segoe UI, Arial, sans-serif" font-size="16">© 2026 | Team laksha cracker</text>
+</svg>

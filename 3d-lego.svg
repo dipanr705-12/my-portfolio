@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF4FB"/>
+      <stop offset="100%" stop-color="#A5BCCE"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60768A"/>
+      <stop offset="100%" stop-color="#283542"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D4E60"/>
+      <stop offset="100%" stop-color="#18222C"/>
+    </linearGradient>
+  </defs>
+  <!-- Top Face -->
+  <path d="M100 30 L160 65 L100 100 L40 65 Z" fill="url(#cubeTop)"/>
+  <!-- Left Face -->
+  <path d="M40 65 L100 100 L100 170 L40 135 Z" fill="url(#cubeLeft)"/>
+  <!-- Right Face -->
+  <path d="M100 100 L160 65 L160 135 L100 170 Z" fill="url(#cubeRight)"/>
+  <!-- Studs on Top -->
+  <ellipse cx="100" cy="55" rx="16" ry="9" fill="#EBF4FB"/>
+  <ellipse cx="100" cy="51" rx="16" ry="9" fill="#C5D7E5"/>
+  <ellipse cx="70" cy="72" rx="14" ry="8" fill="#C5D7E5"/>
+  <ellipse cx="130" cy="72" rx="14" ry="8" fill="#A5BCCE"/>
+</svg>

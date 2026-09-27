@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#179b73" />
+      <stop offset="55%" stop-color="#28c77f" />
+      <stop offset="100%" stop-color="#2edd89" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg3)" />
+
+  <!-- Back Button -->
+  <rect x="6" y="278" width="84" height="36" rx="18" fill="#ffffff" />
+  <text x="48" y="301" text-anchor="middle" fill="#14532d" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="15">← Back</text>
+
+  <!-- Header -->
+  <text x="800" y="114" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="44">🌴 Kerala in Pre-Winter 🌴</text>
+  <text x="800" y="150" text-anchor="middle" fill="#e6fffa" font-family="Segoe UI, Arial, sans-serif" font-size="18">God's Own Country of backwaters &amp; greenery</text>
+
+  <!-- Card 1: About Kerala -->
+  <rect x="335" y="204" width="910" height="130" rx="18" fill="#ffffff" fill-opacity="0.22" />
+  <text x="358" y="250" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🌿 About Kerala</text>
+  <text x="358" y="284" fill="#f0fdf4" font-family="Segoe UI, Arial, sans-serif" font-size="16">Kerala is a beautiful state located on the southwestern coast of India. Known as “God’s Own Country”, it is famous for its</text>
+  <text x="358" y="309" fill="#f0fdf4" font-family="Segoe UI, Arial, sans-serif" font-size="16">lush green landscapes, backwaters, beaches, wildlife, and rich cultural traditions.</text>
+
+  <!-- Card 2: Pre-Winter Weather -->
+  <rect x="335" y="354" width="910" height="130" rx="18" fill="#ffffff" fill-opacity="0.22" />
+  <text x="358" y="400" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🍃 Pre-Winter Weather</text>
+  <text x="358" y="434" fill="#f0fdf4" font-family="Segoe UI, Arial, sans-serif" font-size="16">During pre-winter (October–November), Kerala enjoys pleasant weather after the monsoon. The greenery is at its best,</text>
+  <text x="358" y="459" fill="#f0fdf4" font-family="Segoe UI, Arial, sans-serif" font-size="16">humidity reduces, and the climate becomes perfect for travel and sightseeing.</text>
+
+  <!-- Card 3: Places to Visit -->
+  <rect x="335" y="504" width="910" height="190" rx="18" fill="#ffffff" fill-opacity="0.22" />
+  <text x="358" y="550" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">📍 Places to Visit</text>
+
+  <g transform="translate(358, 572)">
+    <rect x="0" y="0" width="202" height="102" rx="14" fill="#ffffff" fill-opacity="0.25" />
+    <text x="101" y="46" text-anchor="middle" font-size="32">🚤</text>
+    <text x="101" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Alleppey Backwaters</text>
+
+    <rect x="220" y="0" width="202" height="102" rx="14" fill="#ffffff" fill-opacity="0.25" />
+    <text x="321" y="46" text-anchor="middle" font-size="32">🏞</text>
+    <text x="321" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Munnar</text>
+
+    <rect x="440" y="0" width="202" height="102" rx="14" fill="#ffffff" fill-opacity="0.25" />
+    <text x="541" y="46" text-anchor="middle" font-size="32">🐘</text>
+    <text x="541" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Thekkady</text>
+
+    <rect x="660" y="0" width="202" height="102" rx="14" fill="#ffffff" fill-opacity="0.25" />
+    <text x="761" y="46" text-anchor="middle" font-size="32">🏖</text>
+    <text x="761" y="80" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="16">Varkala Beach</text>
+  </g>
+
+  <!-- Card 4: Why Visit in Pre-Winter? -->
+  <rect x="335" y="714" width="910" height="180" rx="18" fill="#ffffff" fill-opacity="0.22" />
+  <text x="358" y="760" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="25">🎒 Why Visit in Pre-Winter?</text>
+  <g fill="#f0fdf4" font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    <text x="358" y="794">✓ Fresh green landscapes after monsoon</text>
+    <text x="358" y="819">✓ Comfortable weather for travel</text>
+    <text x="358" y="844">✓ Best time for houseboat stays</text>
+    <text x="358" y="869">✓ Perfect season for nature &amp; wildlife lovers</text>
+  </g>
+
+  <text x="800" y="974" text-anchor="middle" fill="#e6fffa" font-family="Segoe UI, Arial, sans-serif" font-size="16">© 2026 | Team Laksha Cracker</text>
+</svg>

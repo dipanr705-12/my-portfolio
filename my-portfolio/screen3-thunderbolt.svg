@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <radialGradient id="thunderBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#192242" />
+      <stop offset="60%" stop-color="#0b1022" />
+      <stop offset="100%" stop-color="#05070e" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#thunderBg)" />
+
+  <!-- Lightning bolts -->
+  <path d="M 600 280 L 480 180 L 520 220 L 300 80" fill="none" stroke="#FFEA00" stroke-width="6" stroke-linecap="round" />
+  <path d="M 600 280 L 720 180 L 680 220 L 900 80" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+  <path d="M 450 350 L 200 480" fill="none" stroke="#FFEA00" stroke-width="4" stroke-linecap="round" />
+  <path d="M 750 350 L 1000 480" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Code Labels -->
+  <text x="320" y="70" fill="#FFEA00" font-family="monospace" font-weight="700" font-size="20">C++</text>
+  <text x="880" y="70" fill="#38BDF8" font-family="monospace" font-weight="700" font-size="20">JS()</text>
+  <text x="180" y="470" fill="#FFEA00" font-family="monospace" font-weight="700" font-size="20">HTML</text>
+  <text x="980" y="470" fill="#38BDF8" font-family="monospace" font-weight="700" font-size="20">PYTHON</text>
+
+  <!-- Pikachu in Battle Pose -->
+  <circle cx="600" cy="380" r="130" fill="#FFEA00" />
+  <!-- Cheeks -->
+  <circle cx="515" cy="400" r="26" fill="#F01124" />
+  <circle cx="685" cy="400" r="26" fill="#F01124" />
+  <!-- Starburst Flare -->
+  <polygon points="515,350 525,385 560,375 532,400 558,428 522,416 515,450 508,416 472,428 498,400 470,375 505,385" fill="#FFEA00" />
+  <polygon points="685,350 695,385 730,375 702,400 728,428 692,416 685,450 678,416 642,428 668,400 640,375 675,385" fill="#FFEA00" />
+  <!-- Eyes -->
+  <circle cx="550" cy="350" r="18" fill="#141414" />
+  <circle cx="556" cy="342" r="7" fill="#FFFFFF" />
+  <circle cx="650" cy="350" r="18" fill="#141414" />
+  <circle cx="644" cy="342" r="7" fill="#FFFFFF" />
+  <!-- Mouth -->
+  <path d="M 570 410 Q 600 440 630 410 Z" fill="#E66482" stroke="#141414" stroke-width="4" />
+
+  <text x="600" y="620" fill="#FFEA00" font-family="sans-serif" font-weight="800" font-size="32" text-anchor="middle">CLASSIC PIKACHU THUNDERBOLT HUB</text>
+</svg>
