@@ -12,67 +12,16 @@ const PORTRAIT_URL = './pikachu-face.svg';
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenContact }) => {
   const [isThunderboltOpen, setIsThunderboltOpen] = useState(false);
-  const handleDownloadCV = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const pdfContent = `%PDF-1.4
-1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
-endobj
-2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
-endobj
-3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
-endobj
-4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
-endobj
-5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
-endobj
-6 0 obj
-<< /Length 580 >>
-stream
-BT
-/F1 22 Tf 50 730 Td (DIPAN ROY - ECE ENGINEER & 3D CREATOR) Tj
-/F2 10 Tf 0 -20 Td (Email: dipanr705@gmail.com | GitHub: github.com/dipanr705-12) Tj
-0 -15 Td (LinkedIn: linkedin.com/in/dipan-roy-aa6316385) Tj
-/F1 13 Tf 0 -35 Td (SUMMARY) Tj
-/F2 10 Tf 0 -16 Td (ECE student passionate about electronics, microcontrollers, web apps & hardware.) Tj
-/F1 13 Tf 0 -30 Td (SKILLS) Tj
-/F2 10 Tf 0 -16 Td (- Programming: C, C++, JavaScript, HTML, CSS, Python, Node.js) Tj
-0 -15 Td (- Hardware & PCB: Arduino, KiCad, Eagle PCB, Wokwi, Tinkercad Circuits) Tj
-/F1 13 Tf 0 -30 Td (FEATURED PROJECTS) Tj
-/F2 10 Tf 0 -16 Td (- Winter Guidance: Travel & destination web platform (HTML/CSS/JS)) Tj
-0 -15 Td (- WhatsApp Bot: Automated Node.js/Docker cloud service) Tj
-0 -15 Td (- ECE & Coding Hub: Open-source robotics & hardware repository) Tj
-ET
-endstream
-endobj
-xref
-0 7
-0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000244 00000 n 
-0000000312 00000 n 
-0000000375 00000 n 
-trailer
-<< /Size 7 /Root 1 0 R >>
-startxref
-1025
-%%EOF`;
-
-    const blob = new Blob([pdfContent], { type: 'application/pdf' });
-    const url = URL.createObjectURL(blob);
+  const handleDownloadCV = (e?: React.MouseEvent) => {
+    if (e) {
+      e.preventDefault();
+    }
     const link = document.createElement('a');
-    link.href = url;
+    link.href = './Dipan_Roy_CV.pdf';
     link.download = 'Dipan_Roy_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   const handleNavClick = (
@@ -111,7 +60,8 @@ startxref
             About
           </a>
           <a
-            href="#download-cv"
+            href="./Dipan_Roy_CV.pdf"
+            download="Dipan_Roy_CV.pdf"
             onClick={handleDownloadCV}
             className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200 whitespace-nowrap"
           >
@@ -358,8 +308,7 @@ startxref
           onOpenContact?.();
         }}
         onDownloadCV={() => {
-          const fakeEvent = { preventDefault: () => {} } as React.MouseEvent<HTMLAnchorElement>;
-          handleDownloadCV(fakeEvent);
+          handleDownloadCV();
         }}
       />
 
