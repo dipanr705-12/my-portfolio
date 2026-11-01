@@ -290,33 +290,85 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
   useEffect(() => {
     // Dynamically append any additional public repositories added to dipanr705-12
-    fetch('https://api.github.com/users/dipanr705-12/repos?sort=updated')
-      .then((res) => (res.ok ? res.json() : []))
-      .then((repos) => {
+    async function syncGithubProjects() {
+      try {
+        const res = await fetch('https://api.github.com/users/dipanr705-12/repos?sort=updated');
+        if (!res.ok) return;
+        const repos = await res.json();
         if (!Array.isArray(repos)) return;
-        const knownUrls = new Set(
-          PROJECTS.map((p) => p.githubUrl.toLowerCase())
+
+        const knownUrls = new Set(PROJECTS.map((p) => p.githubUrl.toLowerCase()));
+        const extraRepos = repos.filter(
+          (r) => r && typeof r.html_url === 'string' && !knownUrls.has(r.html_url.toLowerCase())
         );
-        const extraRepos: ProjectData[] = repos
-          .filter(
-            (r) =>
-              r &&
-              typeof r.html_url === 'string' &&
-              !knownUrls.has(r.html_url.toLowerCase())
-          )
-          .map((r, idx) => {
+
+        const loadedProjects: ProjectData[] = await Promise.all(
+          extraRepos.map(async (r, idx) => {
             const num = String(PROJECTS.length + idx + 1).padStart(2, '0');
-            const fallbackProject = PROJECTS[idx % PROJECTS.length];
+            const branch = r.default_branch || 'main';
+            const rawBase = `https://raw.githubusercontent.com/${r.full_name}/${branch}`;
+
+            const detectedImages: string[] = [];
+
+            // 1. Try reading README.md to auto-detect images
+            try {
+              const readmeRes = await fetch(`${rawBase}/README.md`);
+              if (readmeRes.ok) {
+                const text = await readmeRes.text();
+                // Match relative markdown images: ![alt](path)
+                const mdImgRegex = /!\[.*?\]\((?!https?:\/\/)([^)]+\.(?:png|jpg|jpeg|webp|gif|svg))\)/gi;
+                let match;
+                while ((match = mdImgRegex.exec(text)) !== null) {
+                  const cleanPath = match[1].replace(/^\.?\//, '');
+                  detectedImages.push(`${rawBase}/${cleanPath}`);
+                }
+
+                // Match absolute raw.githubusercontent.com images
+                const absImgRegex = /!\[.*?\]\((https:\/\/raw\.githubusercontent\.com\/[^)]+\.(?:png|jpg|jpeg|webp|gif|svg))\)/gi;
+                while ((match = absImgRegex.exec(text)) !== null) {
+                  detectedImages.push(match[1]);
+                }
+              }
+            } catch (e) {
+              // Ignore readme error
+            }
+
+            // 2. Try photos or docs folders if no images found yet
+            if (detectedImages.length === 0) {
+              for (const folder of ['photos', 'docs', 'screenshots', 'assets']) {
+                try {
+                  const dirRes = await fetch(`https://api.github.com/repos/${r.full_name}/contents/${folder}`);
+                  if (dirRes.ok) {
+                    const items = await dirRes.json();
+                    if (Array.isArray(items)) {
+                      const imgs = items
+                        .filter((f) => /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(f.name))
+                        .map((f) => f.download_url);
+                      detectedImages.push(...imgs);
+                    }
+                  }
+                } catch (e) {
+                  // Ignore
+                }
+                if (detectedImages.length > 0) break;
+              }
+            }
+
+            const fallback = PROJECTS[idx % PROJECTS.length];
+            const col2Img = detectedImages[0] || fallback.col2Img;
+            const col1Img1 = detectedImages[1] || detectedImages[0] || fallback.col1Img1;
+            const col1Img2 = detectedImages[2] || undefined;
+            const extraImages = detectedImages.length > 3 ? detectedImages.slice(3) : undefined;
+
             return {
               number: num,
               name: String(r.name).replace(/[-_]/g, ' '),
-              category: r.language ? `${r.language} Project` : 'GitHub Project',
-              col1Img1: fallbackProject.col1Img1,
-              col1Img2: fallbackProject.col1Img2,
-              col2Img: fallbackProject.col2Img,
-              summary:
-                r.description ||
-                `Open-source repository ${r.name} by Dipan Roy on GitHub.`,
+              category: r.language ? `${r.language} Project` : 'Hardware / Software Project',
+              col1Img1,
+              col1Img2,
+              col2Img,
+              extraImages,
+              summary: r.description || `Open-source repository ${r.name} by Dipan Roy on GitHub.`,
               deliverables: r.language
                 ? `${r.language} · GitHub Repository`
                 : 'Open Source · GitHub Repository',
@@ -324,17 +376,20 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 ? new Date(r.created_at).getFullYear().toString()
                 : '2026',
               githubUrl: r.html_url,
-              liveUrl: r.homepage || undefined,
+              liveUrl: r.homepage || (r.name === 'local-events-map' ? 'https://local-events-map.onrender.com' : undefined),
             };
-          });
+          })
+        );
 
-        if (extraRepos.length > 0) {
-          setProjects([...PROJECTS, ...extraRepos]);
+        if (loadedProjects.length > 0) {
+          setProjects([...PROJECTS, ...loadedProjects]);
         }
-      })
-      .catch(() => {
-        // Keep default curated GitHub projects if offline
-      });
+      } catch (err) {
+        console.error('Failed to sync projects:', err);
+      }
+    }
+
+    syncGithubProjects();
   }, []);
 
   const { scrollYProgress } = useScroll({
